@@ -11,6 +11,7 @@ ul{
 a{
     text-decoration: none;
 }
+
 .send{
     max-width: 600px;
     width: 100%;
@@ -131,12 +132,13 @@ a{
             
                     .items{
                         max-width: 1300px;
-                        width: 100%;
-                     
-                        margin:0 auto;
-                      
+                        width: 100%;        
+                        margin:0 auto;               
                         @media screen and (max-width: 1440px) {
                             padding:0px 100px;
+                         };
+                         @media screen and (max-width: 600px) {
+                            padding:0px 50px;
                          };
                          @media screen and (max-width: 480px) {
                             padding:0px 5px;
@@ -166,9 +168,14 @@ a{
                              grid-template-columns: auto auto;
                              justify-content: center;
                                column-gap: 5px;
-                               width: 100%;
+                               width: 80%;
                              
                              }   
+                             @media screen and (max-width: 320px) {
+                          
+                                  width: 100%;
+                                
+                                } 
                             &-card{
                         
                                 width: 250px;
@@ -249,7 +256,7 @@ a{
                                     font-size: 14px;
                                    }  
                                    @media screen and (max-width: 320px) {
-                                    font-size: 12px;
+                                    font-size: 16px;
                                     padding:10px 0px;
                                    
                                    }  
@@ -1249,7 +1256,7 @@ main{
             transition: 1s;
             margin:25px auto 0px auto;
             @media screen and (max-width:480px) {
-                font-size: 14px;
+                font-size: 18px;
                 margin-top: 5px;
             }
             &:hover{
@@ -1349,14 +1356,15 @@ main{
         color:white;
         font-size: 32px;
         gap:20px;
+       
         @media screen and (max-width:480px) {
             gap:10px;
-            font-size: 22px;
-            text-align: center;
+            margin-top: 20px;
         }
         @media screen and (max-width:768px) {
             gap:10px;
             font-size: 22px;
+            text-align: center;
         }
         span{
             font-size: 20px;
