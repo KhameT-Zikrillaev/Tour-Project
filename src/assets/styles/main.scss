@@ -14,7 +14,7 @@ a{
 .send{
     max-width: 600px;
     width: 100%;
-    height: 100px;
+    height: 80px;
     background: rgb(0, 0, 0,0.6);
     border-radius: 32px;
     position: fixed;
@@ -30,7 +30,7 @@ a{
     @media screen and (max-width:992px) {
         max-width: 300px;
         width: 100%;
-        height: 100px;
+        height: 80px;
         right: 3%;
     &__text{
         font-size: 22px;
@@ -40,24 +40,14 @@ a{
         max-width: 250px;
         width: 100%;
         height: 60px;
-        left:25%;
-        right:25%;
-     
+        left:50%;
+        transform: translateX(-50%);
+    
     &__text{
-        font-size: 22px;
+        font-size: 18px;
     }
     }
-    @media screen and (max-width:320px) {
-        max-width: 250px;
-        width: 100%;
-        height: 60px;
-       left:35px;
-       right:35px;
-     
-    &__text{
-        font-size: 22px;
-    }
-    }
+
    
 }
 .activesend{
@@ -106,7 +96,7 @@ a{
                         font-size: 26px;
                          @media screen and (max-width: 768px) {
                             font-size: 22px;
-                       
+                          padding:0px 5px;
                          };  
                     }
                     &-h1{
@@ -568,7 +558,7 @@ a{
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
+        box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.5);
         @media screen and (max-width:480px) {
             width: 250px!important;
            
@@ -624,7 +614,7 @@ main{
     width: 100%;
     margin:0 auto;
     @media screen and (max-width:992px) {
-        padding:0px 20px;
+        padding:0px 10px;
     }
 }
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~sec-1
@@ -657,6 +647,7 @@ main{
         margin: 50px auto;
         @media screen and (max-width:480px) {
             margin: 20px auto;
+            font-size: 20px;
          }
     }
 
@@ -676,10 +667,14 @@ main{
     &-title{
         text-align: center;
         font-size: 38px;
+    
         @media screen and (max-width:768px) {
       
             font-size: 26px;
         }
+        @media screen and (max-width:480px) {
+            font-size: 20px;
+         }
     }
     &-info{
         text-align: center;
@@ -713,10 +708,15 @@ main{
   }
     &-title{
         font-size: 38px;
+   
+       
         @media screen and (max-width:768px) {
-      
+        
             font-size: 26px;
         }
+        @media screen and (max-width:480px) {
+            font-size: 22px;
+         }
     }
     &-info{
         font-size: 24px;
@@ -724,9 +724,10 @@ main{
         width: 100%;
         max-width: 700px;
         margin:50px 0px;
+   
         @media screen and (max-width:768px) {
             margin:10px 0px;
-            font-size: 22px;
+            font-size: 20px;
         }
     }
  
@@ -1177,6 +1178,7 @@ main{
        background: #F9F9F9;
        padding-bottom: 25px;
        border-radius: 25px;
+  
        &-karta{
         iframe{
             width: 100%;
@@ -1206,10 +1208,14 @@ main{
             flex-direction: column;
             margin-top: 25px;
             gap:20px;
-      
+          
             @media screen and (max-width:480px) {
-                padding:10px;
+                gap:10px;
+          
                 margin-top: 5px;
+                width: 90%;
+                margin: 0 auto;
+                padding:10px 0px;
             }
             select{     
                 height: 40px;
@@ -1370,6 +1376,7 @@ main{
         border: 2px solid white;
         color:white;
         transition: 1s;
+        text-align: center;
         &:hover{
             background: white;
             border: 2px solid #129BE5;
